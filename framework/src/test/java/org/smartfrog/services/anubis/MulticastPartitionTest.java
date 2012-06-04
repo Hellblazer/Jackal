@@ -26,8 +26,10 @@ public class MulticastPartitionTest extends PartitionTest {
         public int node() {
             return id.incrementAndGet();
         }
+        
+        
     }
-
+    
     @Override
     protected Class<?>[] getConfigs() {
         return new Class[] { member.class, member.class, member.class,
